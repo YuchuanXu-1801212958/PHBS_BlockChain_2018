@@ -153,7 +153,7 @@ For the part of emotional tendency analysis, because the purpose is to judge the
 
 As mentioned earlier, a news section about Bitcoin has been set up in ccn.com. Its page address is www.ccn.com/news/. Looking at the HTML code of this page, we find that all news headlines and links are located under the D4 tag. 
 
-!()
+!(https://github.com/YuchuanXu-1801212958/tupian/blob/master/code.png?raw=true)
 
 P5: News Link HTML Code
 
@@ -200,3 +200,33 @@ The three independent variables of Bitcoin mining calculation difficulty, Bitcoi
 ### **6.1 Mining difficulty**
 
 According to Metcalfe’s law, the value of the network increases with the square of the number of users, that is, the value of the network is proportional to the square of the number of users. By analogy with the Bitcoin network, the increasing number of mining equipment and the increasing number of miners in the Bitcoin network, the difficulty of mining is increasing, and the value of the Bitcoin network will increase. Therefore, we can introduce the square of the computational difficulty of Bitcoin mining, namely x12, into the multiple regression model as a detection factor.
+
+### **6.2 Search Volume and Emotional Tendency**
+
+Search volume and emotional inclination, these two variables have a common impact on Bitcoin price. A larger search volume of Bitcoin means that news reports during this period will have an impact on more users. Therefore, the product of search volume and emotional inclination, x2x3, can be introduced into the multiple regression model as a detection factor. However, because of the range of emotional inclination (-1,1), there exists a situation where emotional inclination is zero. In this case, the product may be zero, resulting in the change of search volume can not be reflected in the model. To avoid this kind of situation, we can add all emotional inclination to 1, so that the range of values becomes (2,0).Therefore, the product of search volume and emotional inclination plus one is introduced as a detection factor, that is, x2 (x3 + 1).
+
+In order to verify the correlation between this factor and the price of Bitcoin, we first make a regression analysis between the factor and the price of Bitcoin, and get the following tables: Table 1, 2, 3.
+
+| Multiple R |0.91569041|
+|:----:|:----:|
+| S Square | 0.91569041 |
+| Adjusted R Square|0.837601503|
+| Standard Error|1516.957586|
+| Observation Value|184|
+
+Table 1: x2 (x3 + 1) regression statistics
+
+|   |df|SS|MS|F|Significance F|
+|:----:|:----:|:----:|:----:|:----:|:----:|
+|Regression Analysis|2|2174269090|2174269090|944.8577197|5.69528E-74|
+|Residual|182|41881177.8|2301160.317| | |
+|Total|183|2593080268| | | |
+
+Table 2: x2 (x3 + 1) variance analysis
+
+| |Coefficients|Standard Error|T Stat|P-value|Lower 95%|Upper 95%|
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+|Intercept|207.6845438|130.4561617|1.591987233|0.113122926|-49.7164316|465.0855193|
+|X Variable 1|295.1202312|6.67306399|30.73853802|5.69528E-74|191.9537149|218.2857475|
+
+Table 3: x2 (x3 + 1) Variance regression analysis
