@@ -107,4 +107,8 @@ Considering the price of Bitcoin as a commodity, cost is the first easy factor t
 
 In order to prove whether the price of Bitcoin is correlated with the difficulty of mining calculation, we selected the historical data of Bitcoin price and the historical data of difficulty to analyze the period from September 2014 to April, 2019. As shown in P 1 and 2, we can see that although the difficulty of calculation is similar to the general trend of price, it cannot be reflected in price fluctuations.
 
+！(https://raw.githubusercontent.com/YuchuanXu-1801212958/tupian/master/dif.png)
 
+P1: Bitcoin Historical Mining Difficulty
+
+！（
