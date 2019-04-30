@@ -111,9 +111,9 @@ In order to prove whether the price of Bitcoin is correlated with the difficulty
 
 P1: Bitcoin Historical Mining Difficulty
 
-！（
+!（https://github.com/YuchuanXu-1801212958/tupian/raw/master/price.png)
 
-P2: Bitcoin Historical Price Chart
+P2: Bitcoin Historical Price
 
 As for the reasons that the impact of cost is not significant, it can be concluded that the mining cost of Bitcoin is mainly for miners, and for users who regard Bitcoin as money or investors, the cost is not their main consideration. At the same time, as a digital currency that needs to build social consensus, Bitcoin mainly relies on currency users and a large number of investors at present. The result of price change is that cost has no significant effect on price.
 
