@@ -101,14 +101,48 @@ In summary, security issues, the introduction of national policies, market accep
 
 In the last chapter, we have analyzed the impact of Bitcoin mining cost, security, national policy, social consensus, bifurcation and counterfeit currency on Bitcoin price. I will use positivism to analyze other influencing factors in data and make a mathematical regression model analysis.
 
-### **The Relevance of Mining Computation Difficulty and Bitcoin Price**
+### **4.1 Relationship between Mining Difficulty and Bitcoin Price**
 
 Considering the price of Bitcoin as a commodity, cost is the first easy factor to think about. As a digital currency, Bitcoin is mined through what we call Proof of Work mechanisms. Therefore, the mining cost of Bitcoin mainly consists of the purchase cost of mining machines, the electricity cost of mining power consumption and the cost of manpower. The input of mining machines and manpower belongs to the fixed consumption, while the average power of digging out a Bitcoin is mainly related to the difficulty of solving special solutions and its own computing power. When assuming computing power as constant, the change of calculating difficulty of solving special solutions can reflect the changing trend of Bitcoin cost.
 
 In order to prove whether the price of Bitcoin is correlated with the difficulty of mining calculation, we selected the historical data of Bitcoin price and the historical data of difficulty to analyze the period from September 2014 to April, 2019. As shown in P 1 and 2, we can see that although the difficulty of calculation is similar to the general trend of price, it cannot be reflected in price fluctuations.
 
-！(https://raw.githubusercontent.com/YuchuanXu-1801212958/tupian/master/dif.png)
+!(https://raw.githubusercontent.com/YuchuanXu-1801212958/tupian/master/dif.png)
 
 P1: Bitcoin Historical Mining Difficulty
 
 ！（
+
+P2: Bitcoin Historical Price Chart
+
+As for the reasons that the impact of cost is not significant, it can be concluded that the mining cost of Bitcoin is mainly for miners, and for users who regard Bitcoin as money or investors, the cost is not their main consideration. At the same time, as a digital currency that needs to build social consensus, Bitcoin mainly relies on currency users and a large number of investors at present. The result of price change is that cost has no significant effect on price.
+
+### **4.2 Relationship between Bitcoin Search Volume and Bitcoin Price**
+
+We mentioned earlier that the degree of building social consensus has an impact on the price of Bitcoin, but the degree of building social consensus is a difficult concept to quantify. Fortunately, the quantitative data of search engines can reflect the social awareness of the concept of Bitcoin from the side. We can use Google Trend to get the search volume data of any key words. Here we are Using the search volume of the keyword "Bitcoin" between September 2014 and April 2019 as reference data, P3 and 4 are as follows:
+
+!()
+
+P3: Google Trends - Bitcoin
+
+!()
+
+P4: Bitcoin Historical Price
+
+## **5 News Emotional Tendency Data**
+
+### **5.1 The Influences of News Emotional Tendency on Price**
+
+In the short and medium term, news media outbursts of positive and negative news have a great impact on the psychology of Bitcoin holders or investors. Almost every major price change is accompanied by hot events. These hotspots basically include the actions that affect the price of Bitcoin analyzed in the previous chapter (security, policy introduction, market recognition, coin bifurcation and counterfeit currency, etc.). Human behavior can undoubtedly determine the demand for Bitcoin. News media coverage is a description of the latest individual activities. So the big factor affecting prices is the development of this news media content. Robert Shillerr believes that the trend of bitcoin prices is particularly consistent with the definition of speculative bubbles. People are rushing to hold bitcoins, hoping to gain wealth through bitcoin appreciation. Bitcoin investment has gradually become familiar and popular, and the media played an important role in this process [24]. Therefore, the emotional tendencies of news reports are bound to have an impact on people’s attitudes towards Bitcoin, which further affects people’s purchase or investment demand for Bitcoin, and then has an impact on prices.
+
+### **5.2 News Data Sources**
+
+For the part of emotional tendency analysis, because the purpose is to judge the influence of emotional tendency on price, the data of emotional tendency need not be very accurate, so a representative news website can be chosen as news source. We chooses the website www.ccn.com as the source of news reports. The main reasons for choosing the website are as follows:
+
++ (1) Selecting English news websites can cover more parts of the world, and English is more conducive to accurate emotional orientation analysis than Chinese.
+
++ (2) The website mainly reports on the news related to digital currency. Bitcoin is the main area of Bitcoin. The professionalism and authority of the website are guaranteed.
+
++ (3) The website has special pages for several major currencies (Bitcoin, Wright coin, ETF), so when crawling the corresponding news reports, it omits the part of classifying news content, which is conducive to high code efficiency and reduce the incidence of errors.
+
++ (4) According to Alexa’s website query, the website ranks around 6000 among all the websites in the world, and has more than 100,000 daily visits. It has a relatively large influence and is sufficiently representative in similar websites.
