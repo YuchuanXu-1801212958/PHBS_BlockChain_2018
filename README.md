@@ -153,7 +153,7 @@ For the part of emotional tendency analysis, because the purpose is to judge the
 
 As mentioned earlier, a news section about Bitcoin has been set up in ccn.com. Its page address is www.ccn.com/news/. Looking at the HTML code of this page, we find that all news headlines and links are located under the D4 tag. 
 
-!(https://github.com/YuchuanXu-1801212958/tupian/blob/master/code.png?raw=true)
+!(https://raw.githubusercontent.com/YuchuanXu-1801212958/tupian/master/code.png)
 
 P5: News Link HTML Code
 
