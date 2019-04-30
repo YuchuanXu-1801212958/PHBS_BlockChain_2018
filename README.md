@@ -146,3 +146,57 @@ For the part of emotional tendency analysis, because the purpose is to judge the
 + (3) The website has special pages for several major currencies (Bitcoin, Wright coin, ETF), so when crawling the corresponding news reports, it omits the part of classifying news content, which is conducive to high code efficiency and reduce the incidence of errors.
 
 + (4) According to Alexa’s website query, the website ranks around 6000 among all the websites in the world, and has more than 100,000 daily visits. It has a relatively large influence and is sufficiently representative in similar websites.
+
+### **5.3 News Reporting Web Crawler Code**
+
+#### **5.3.1 Page analysis**
+
+As mentioned earlier, a news section about Bitcoin has been set up in ccn.com. Its page address is www.ccn.com/news/. Looking at the HTML code of this page, we find that all news headlines and links are located under the D4 tag. 
+
+!()
+
+P5: News Link HTML Code
+
+When you open the page, you find that only the latest 16 news items are displayed. If you want to get earlier news, you need to click the "Load More Posts" button at the bottom of the page. P6 below shows that more 16 news items will be loaded on the same page after clicking. Therefore, if you need to get enough news links, you need to click the button several times to load enough news items. More news items, and then crawl one by one.
+
+!()
+
+P6: The Load More Posts button at the bottom of the page
+
+#### **5.3.2 Reptilian Code Description**
+
+Because the page turning method mentioned above is to load by clicking the button, we use Python’s Selenium library to simulate mouse clicks. First, by looking at the HTML code of the web page, we can get the XPath value of the button. We can use Selenium’s find_element_by_xpath method to locate the button for click operation. The first step of the program is to open the web page www.ccn.com/news/, using the Chrome browser through webdriver.Chrome() method, and then continue to simulate the mouse input button as described above until enough news reports are loaded, and then use Python’s Beautiful Soup library to retrieve the news content links under the D4 tag, so that the program will not be in the wrong situation. Next can only be re-run, after this step is completed, all links to news content will be saved in a TXT file for the direct use of follow-up procedures.
+
+Driver = webdriver. Chrome () # Open Chrome Browser
+
+Driver. get (url) # access URL address
+
+Driver.find_element_by_xpath("/html/body/div[1]/div/main/div[2]/section/div/div/button"). click () # click buttonsoup = Beautiful Soup (driver.page_source,’html.parser’) # use Beautiful Soup to get the full code of the web page
+
+For link in soup.find_all(‘h4’): # Circulate all H4 Tags
+
+See Appendix 1 for the complete code.
+
+After completing the above part, all the links of Bitcoin news have been saved in a TXT file. Next, we need to get the content of each news in turn, and analyze the emotional orientation of the content, save the time and emotional orientation of the news in the file for data analysis. Use request to open news, in which the header part is intended to disguise as a browser to open news in case it is blocked by the anti-crawler mechanism:
+
+Response = requests. get (url_news, headers = headers, timeout = 10) # Open the news and use BeautifulSoup to get the page code:
+
+Sop_news = Beautiful Soup (response. content,’html. parser’) # Get the page code and use the find method to get the time and content:
+
+Newstime = soup_news.find (‘time’, {class":"update"). get (‘datetime’) get time link = soup_news.find (‘div’, {class": "entry-content"}) text = link.get_text () find the content of the article
+
+The emotional analysis part is accomplished by TextBlob, which is an existing Python library. Although the emotional analysis function of TextBlob library is not for Bitcoin news reporting, it is only expected to make a coarse-grained emotional tendency judgment, so the function of TextBlob library is sufficient to meet the requirements. In TextBlob, polarity attribute is emotional tendency, ranging from -1 to 1.The closer we approach 1, the more positive we are, and vice versa.
+
+Blob = TextBlob (text) F. write (str (blob. polarity) # Record emotional tendencies. See Appendix 2 for the complete code.
+
+### **5.4 Emotional Tendency Data Processing**
+
+In order to facilitate the analysis of emotional tendency data, it is necessary to save the data in CSV file, and because the price and other data are based on the week, we also need to calculate the emotional tendency of each week. We use the average value of all news emotional tendency of each week to represent the emotional tendency of each week. The complete code of the data processing section is shown in Appendix 3 shows the contents of these data processing process files.
+
+## **6 Multivariate Regression Model of Bitcoin Price**
+
+The three independent variables of Bitcoin mining calculation difficulty, Bitcoin search volume and Bitcoin news report sentiment tendency are set as x1, x2 and x3 respectively. Considering the appropriate detection factors and the dependent variable Bitcoin price, a multivariate regression model is established.
+
+### **6.1 Mining difficulty**
+
+According to Metcalfe’s law, the value of the network increases with the square of the number of users, that is, the value of the network is proportional to the square of the number of users. By analogy with the Bitcoin network, the increasing number of mining equipment and the increasing number of miners in the Bitcoin network, the difficulty of mining is increasing, and the value of the Bitcoin network will increase. Therefore, we can introduce the square of the computational difficulty of Bitcoin mining, namely x12, into the multiple regression model as a detection factor.
