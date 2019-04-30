@@ -107,11 +107,11 @@ Considering the price of Bitcoin as a commodity, cost is the first easy factor t
 
 In order to prove whether the price of Bitcoin is correlated with the difficulty of mining calculation, we selected the historical data of Bitcoin price and the historical data of difficulty to analyze the period from September 2014 to April, 2019. As shown in P 1 and 2, we can see that although the difficulty of calculation is similar to the general trend of price, it cannot be reflected in price fluctuations.
 
-!(https://raw.githubusercontent.com/YuchuanXu-1801212958/tupian/master/dif.png)
+![base64图片](https://raw.githubusercontent.com/YuchuanXu-1801212958/tupian/master/dif.png)
 
 P1: Bitcoin Historical Mining Difficulty
 
-!（https://github.com/YuchuanXu-1801212958/tupian/raw/master/price.png)
+![base64图片](https://raw.githubusercontent.com/YuchuanXu-1801212958/tupian/master/price.png)
 
 P2: Bitcoin Historical Price
 
@@ -121,11 +121,11 @@ As for the reasons that the impact of cost is not significant, it can be conclud
 
 We mentioned earlier that the degree of building social consensus has an impact on the price of Bitcoin, but the degree of building social consensus is a difficult concept to quantify. Fortunately, the quantitative data of search engines can reflect the social awareness of the concept of Bitcoin from the side. We can use Google Trend to get the search volume data of any key words. Here we are Using the search volume of the keyword "Bitcoin" between September 2014 and April 2019 as reference data, P3 and 4 are as follows:
 
-!()
+![base64图片](https://raw.githubusercontent.com/YuchuanXu-1801212958/tupian/master/google.png)
 
 P3: Google Trends - Bitcoin
 
-!()
+![base64图片](https://raw.githubusercontent.com/YuchuanXu-1801212958/tupian/master/price.png)
 
 P4: Bitcoin Historical Price
 
@@ -153,13 +153,13 @@ For the part of emotional tendency analysis, because the purpose is to judge the
 
 As mentioned earlier, a news section about Bitcoin has been set up in ccn.com. Its page address is www.ccn.com/news/. Looking at the HTML code of this page, we find that all news headlines and links are located under the D4 tag. 
 
-!(https://raw.githubusercontent.com/YuchuanXu-1801212958/tupian/master/code.png)
+![base64图片](https://raw.githubusercontent.com/YuchuanXu-1801212958/tupian/master/code.png)
 
 P5: News Link HTML Code
 
 When you open the page, you find that only the latest 16 news items are displayed. If you want to get earlier news, you need to click the "Load More Posts" button at the bottom of the page. P6 below shows that more 16 news items will be loaded on the same page after clicking. Therefore, if you need to get enough news links, you need to click the button several times to load enough news items. More news items, and then crawl one by one.
 
-!()
+![base64图片](https://raw.githubusercontent.com/YuchuanXu-1801212958/tupian/master/button.png)
 
 P6: The Load More Posts button at the bottom of the page
 
