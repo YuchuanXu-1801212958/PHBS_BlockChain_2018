@@ -230,3 +230,369 @@ Table 2: x2 (x3 + 1) variance analysis
 |X Variable 1|295.1202312|6.67306399|30.73853802|5.69528E-74|191.9537149|218.2857475|
 
 Table 3: x2 (x3 + 1) Variance regression analysis
+
+From Table 1, we can see that Multiple R measures the degree of correlation between the price of Bitcoin and X2X3. R equals 0.916, indicating that the price of Bitcoin is highly correlated with x2 (x3 + 1) and has a positive correlation. RSquare is used to measure the fitting effect, and its value R2 is equal to 0.8385. It shows that the ability of this variable to explain the price of Bitcoin is 83.85%, and the fitting effect is strong. Adjusted R-Square, the value of which is equal to 0.8376, shows that x2 (x3 + 1) can explain 83.76% of the price of Bitcoin, and 16.24% of the price of Bitcoin needs to be explained by other factors. Table 2 shows that the regression effect of Bitcoin price and X2 (x3 + 1) regression model is determined by Significance F. The P value of Bitcoin price and X2 (x3 + 1) analysis is 5.695*10-74, which is much less than the significant level of 0.05. It shows that the regression effect of the regression model of Bitcoin price and X2 (x3 + 1) is more significant. Table 3 shows that the P value of x2 (x3 + 1) is 5.695*10-74, which is much less than the significant level of 0.05. This shows that the regression coefficient of this variable is very significant. There is a correlation between x2 (x3 + 1) and the price of Bitcoin.
+
+ ### **6.3 Bitcoin price multiple regression model**
+
+According to the above, we can get three independent variables of Bitcoin price multivariate regression model. Bitcoin mining difficulty x1, Bitcoin search volume x2 and Bitcoin news report emotional tendency x3. The two detection factors are the square of calculation difficulty (x12), the product of search volume and emotional tendency plus1 (x2 (x3+1)). We can get Bitcoin price multiple Regression analysis. 
+
+| Multiple R |0.961355277|
+|:----:|:----:|
+| S Square | 0.924203969 |
+| Adjusted R Square|0.923097458|
+| Standard Error|1044.715586|
+| Observation Value|140|
+
+ Table 4: Regression statistics
+ 
+|   |df|SS|MS|F|Significance F|
+|:----:|:----:|:----:|:----:|:----:|:----:|
+|Regression Analysis|2|1823215820|911607910.1|835.2412541|1.80212E-77|
+|Residual|137|149525999.9|1091430.656| | |
+|Total|139|1972741820| | | |
+
+Table 5: Variance Analysis
+
+| |Coefficients|Standard Error|T Stat|P-value|Lower 95%|Upper 95%|
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+|Intercept|66.74853396|103.2313214|0.646591878|0.518977886|-137.384303|270.8813709|
+|X Variable 1|5.41742E-22|4.54306E-23|11.92460473|6.26463E|4.51906E-22|6.31578E-22|
+|X Variable 2|173.9328199|6.068134027|28.66331218|9.75895E-60|161.9335023|185.9321376|
+
+Table 6: Variance regression parameter table
+
+According to the above univariate analysis, we take the mining difficulty, search volume and the emotional tendency of news reports as independent variables, the square of difficulty and search volume*(emotional tendency+1) as detection factors, and the price of bitcoin as dependent variable for multivariate regression fitting analysis. And we leave some data for later testing. At the same time, in order to evaluate the model, we took the data of the first week of each month as the test set. Table 4 shows that the correlation coefficient Multiple R is 0.9614, which indicates that the correlation between independent variables and dependent variables is strong and positive. R-Square is 0.9242, and the fitting effect of these variables is very good. Adjusted R-Square is 0.9231, which indicates that the two detection factors can explain 92.31% and 7.69% of the dependent variable Bitcoin price by other factors. Table 5 uses Significance F to determine the regression effect of multivariate regression model. The P value of the analysis is 1.8021*10-77, which is much less than the significance level of 0.05. It shows that the regression effect of multivariate regression model is more significant. Table 6 shows that the P value of the product of search volume and emotional tendency plus one is 9.75895*10-60, and the P value of difficulty square is 4.51906*10-23, which is far less than the significant level of 0.05, indicating that the regression coefficients of the two variables are significant. So the predictive ability of this model is tested.
+
+To sum up, we use mining computational difficulty X1 and search quantity x2 and emotional tendency X3 as independent variables, and Bitcoin price Y as dependent variable to get multivariable regression linear equation:
+
+Y=5.41742*10-22X12+173.9328199X2(X3+1)+66.74853396+μ
+
+We add a random perturbation term μ to the regression equation. The random perturbation term includes the neglected factors in the three independent variables of the difficulty and the search volume and the emotional tendency of news reports, the observation errors of the three independent variables, the setting errors of model relations and other random factors.
+
+## **7 Summary**
+
+The value of the traditional legal currency (paper money) originates from the credit endorsement of the country, which solves the problem of distrust through the national credit. However, because of its decentralization mechanism, digital currency such as Bitcoin has no third-party credit endorsement, but its value does exist. Firstly, the basic value of digital currency such as Bitcoin comes from its mining value, which includes the input cost of mining machines, electricity consumption and labor costs. Cost guarantees the basic value of digital currency and can be used as the lower limit of the valuation of digital currency. Secondly, the value of gold is also based on the public recognition of gold, and it is difficult to break. Analogous to the value of digital money, with the growing size of the digital money market such as Bitcoin and the gradually formed user system, the value consensus of digital money such as Bitcoin has gradually deepened.
+
+In conclusion, we should analyze the trend of bitcoin prices in the form of “human behavior” and “positivism”. First, according to the mainstream news media report analysis, including security events, national policies, market recognition, forks and altcoins. Secondly, use the mining difficulty, keyword search volume and news report sentiment tendency to analyze the price trend of Bitcoin. 
+
+## **Reference**
+
+[1] 贾丽平.比特币的理论、实践与影响[J].国际金融研究 12(2013):14-25.)
+
+[2] 罗强,张睿.比特币[M]. 机械工业出版社, 2014
+
+[3] 孙佳音.比特币的性质、定价与监管研究[D].上海： 上海交通大学,2014
+
+[4] Li X,Wang C A.The technology and economic determinants of cryptocurrency exchange rates[M]. Elsevier Science Publishers B. V. 2017
+
+[5] J.A. Feigenbaum, P.G.O. Freund. Discrete scale invariance in stock markets beforecrashes[J]. Internat. J. Modern Phys. B 10 1996:3737–3745
+
+[6] Bariviera A F, Basgall M J, Hasperué W, et al. Some stylized facts of the Bitcoinmarket[J]. Physica A Statistical Mechanics & Its Applications. 2017:484:82-90
+
+[7] Dyhrberg A H. Bitcoin, gold and the dollar – A GARCH volatility analysis[J]. Finance Research Letters.2015:16:85-92
+
+
+[8] Castro M, Liskov B. Practical byzantine fault tolerance and proactive recovery[J].ACM Transactions on Computer Systems. 2002: 20(4): 398-461
+
+[9] Bentov I, Lee C, Mizrahi A, Rosenfeld M. Proof of activity: extending Bitcoin’s proof of work via proof of stake[J]. ACM SIGMETRICS Performance Evaluation Review.2014:42(3): 34-37
+
+[10] Consensus in Bitcoin: one system, many models [EB/OL].https://freedom-to-tinker.com/blog/randomwalker/consensus-in-bitcoin-one-system-many-models/
+
+[11] Huberman G, Leshno J D, Moallemi C C. Monopoly Without a Monopolist: An Economic Analysis of the Bitcoin Payment System[M]. Social Science Electronic Publishing. 2017
+
+[12] 陈豪. 比特币的经济学分析[D]. 浙江： 浙江大学, 2015
+
+[13] 比特币盘面与投行潜伏资金_玩币族[EB/OL].http://www.wanbizu.com/jingyan/201606127038.html
+
+[14] 10 coins community events in 2016![EB/OL]https://www.btctrade.com/bitcoin/1323.html
+
+[15] 汇通网 2017 比特币 2017 年如何疯狂？细数过山车行情及重磅事件[EB/OL].http://finance.sina.com.cn/money/forex/hbfx/2017-12-31/doc-ifyqchnr7874160.html
+
+[16] 2013 年上半年中国信息安全综合报告 - 瑞星网[EB/OL]. http://www.rising.com.cn/about/news/rising/2013-07-10/14047_3.html
+
+[17] 硬分叉会如何影响比特币的价值储存有用性？ _巴比特_服务于区块链创新[EB/OL]http://www.8btc.com/hard-fork-affect-bitcoins-usefulness-store-value
+
+[18] 凌清，比特币的技术原理与经济学分析[D].上海： 复旦大学, 2014. 
+
+
+## **Appendix 1**
+
+-# -*- coding: utf-8 -*-
+
+import requests
+
+import unittest
+
+from selenium import webdriver
+
+from selenium.webdriver.common.keys import Keys
+
+from selenium.webdriver.support.wait import WebDriverWait
+
+from selenium.webdriver.support import expected_conditions as EC
+
+from selenium.webdriver.common.by import By
+
+import urllib2
+
+import time
+
+import sys
+
+reload(sys)
+
+sys.setdefaultencoding('utf-8')
+
+from bs4 import BeautifulSoup
+
+from textblob import TextBlob
+
+url=https://www.ccn.com/news/
+
+headers = {
+
+'User-Agent':'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6) Gecko/20091201
+
+Firefox/3.5.6'
+
+}# Disguised as a browser
+
+driver=webdriver.Chrome()
+
+driver.get(url)
+
+page=0
+
+i=0
+
+f=open('demodata.txt','w')
+
+urlnews=open('btcnews.txt','w')
+
+button=driver.find_element_by_xpath("/html/body/div[1]/div/main/div[2]/section/div/div/button") 
+
+while page<1080:
+
+try:
+
+button.click()
+
+page=page+1
+
+except:
+
+print("error",page)
+
+if page<10:
+
+print(page)
+
+if page%50==0:
+
+print(page)
+
+time.sleep(2)
+
+soup=BeautifulSoup(driver.page_source,'html.parser')
+
+print('next')
+
+for link in soup.find_all('h4'):
+
+i=i+1
+
+for child in link.children:
+
+try:
+
+url_news=child.get('href')
+
+urlnews.write(url_news)
+
+urlnews.write("\n")
+
+except:
+
+continue
+
+urlnews.close()
+
+f.close()
+
+driver.close() 
+
+## **Appendix 2**
+
+-# -*- coding: utf-8 -*-
+
+import sys
+
+reload(sys)
+
+sys.setdefaultencoding('utf-8')
+
+import requests
+
+import unittest
+
+from selenium import webdriver
+
+from selenium.webdriver.common.keys import Keys
+
+import urllib2
+
+import time
+
+from bs4 import BeautifulSoup
+
+from textblob import TextBlob
+
+headers = {
+
+'User-Agent':'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6) Gecko/20091201
+
+Firefox/3.5.6'
+
+}# Disguised as a browser
+
+urlfile=open('btcnews.txt','r')
+
+f=open('demodata.txt','w')
+
+i=0
+
+data=urlfile.readlines()
+
+for url_news in data:
+
+try:
+
+response=requests.get(url_news,headers = headers,timeout=10) #Open news
+
+except:
+
+continue
+
+try:
+
+soup_news=BeautifulSoup(response.content,'html.parser') #Get the webpage code
+
+except:
+
+continue
+
+try: 
+
+newstime=soup_news.find('time',{"class":"updated"}).get('datetime') #Get time
+
+except:
+
+continue
+
+try:
+
+link=soup_news.find('div',{"class":"entry-content"})
+
+except:
+
+continue
+
+try:
+
+text=link.get_text() #Find article content
+
+i=i+1
+
+except:
+
+continue
+
+f.write(newstime)
+
+blob = TextBlob(text)
+
+f.write(str(blob.polarity))
+
+f.write('\n')
+
+if i%100==0:
+
+print(i,newstime)
+
+urlfile.close()
+
+f.close() 
+
+## **Appendix 3** 
+-# -*- coding: utf-8 -*-
+
+import csv
+
+import sys
+
+import time
+
+txtfile=open('demodata.txt','r')
+
+csvfile=open('newspolarity.csv','w')
+
+datefile=open('date.csv','r')
+
+reader=csv.reader(datefile)
+
+writer=csv.writer(csvfile)
+
+fileheader=["date","polarity"]
+
+writer.writerow(fileheader)
+
+data=txtfile.readlines()
+
+daterange=datefile.readline()
+
+sum_polarity=0
+
+count=0
+
+for lines in data:
+
+d1=lines[0:4]+"-"+lines[5:7]+"-"+lines[8:10]
+
+d2=lines[25:]
+
+alist=[]
+
+if cmp(d1,daterange)>-1:
+
+sum_polarity=sum_polarity+float(d2)
+
+count=count+1
+
+else:
+
+alist.append(daterange)
+
+if count==0:
+
+alist.append("0")
+
+else:
+
+alist.append(sum_polarity/count)
+
+writer.writerow(alist)
+
+daterange=datefile.readline() 
+
+sum_polarity=0
+
+count=0
+
+txtfile.close()
+
+csvfile.close()
+
+datefile.close() 
+
+
